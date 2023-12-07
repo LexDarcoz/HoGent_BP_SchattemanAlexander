@@ -3,9 +3,7 @@
 %==============================================================================
 % Gebaseerd op document class `hogent-article'
 % zie <https://github.com/HoGentTIN/latex-hogent-article>
-
-% Voor een voorstel in het Engels: voeg de documentclass-optie [english] toe.
-% Let op: kan enkel na toestemming van de bachelorproefcoördinator!
+%
 \documentclass{hogent-article}
 
 % Invoegen bibliografiebestand
@@ -15,62 +13,110 @@
 \studyprogramme{Professionele bachelor toegepaste informatica}
 \course{Bachelorproef}
 \assignmenttype{Onderzoeksvoorstel}
-% Voor een voorstel in het Engels, haal de volgende 3 regels uit commentaar
-% \studyprogramme{Bachelor of applied information technology}
-% \course{Bachelor thesis}
-% \assignmenttype{Research proposal}
 
-\academicyear{2023-2024} % TODO: pas het academiejaar aan
+\academicyear{2023-2024}
 
 % TODO: Werktitel
-\title{Optimalisatie van Frontend- en Backend-Technologieën voor de Ontwikkeling van de Managementtool "Hank"}
+\title{Onderzoek naar het best geschikte frontend en backend framework voor de ontwikkeling van de managementtool "Hank"}
 
-% TODO: Studentnaam en emailadres invullen
 \author{Alexander Schatteman}
 \email{Alexander.schatteman@student.hogent.be}
 
 % TODO: Geef de co-promotor op
 \supervisor[Co-promotor]{K. DeRudder (Elmos NV, \href{mailto:kevin.derudder@elmos.be}{kevin.derudder@elmos.be})}
 
-% Binnen welke specialisatierichting uit 3TI situeert dit onderzoek zich?
-% Kies uit deze lijst:
-%
-% - Mobile \& Enterprise development
-% - AI \& Data Engineering
-% - Functional \& Business Analysis
-% - System \& Network Administrator
-% - Mainframe Expert
-% - Als het onderzoek niet past binnen een van deze domeinen specifieer je deze
-%   zelf
-%
+\projectrepo{https://github.com/}
 \specialisation{Mobile \& Enterprise development}
-\keywords{Frontend, Backend, $\lambda$-calculus}
+\keywords{Frontend, Backend, Interface, Managementtool, Hank, Frameworks, Kostprijs, Performantie, Betrouwbaarheid, Schaalbaarheid}
 
+% ----------- Begin Paper --------------
 \begin{document}
-In deze paper zal er een gedetailleerde vergelijking worden uitgevoerd doormiddel van benchmarks om de snelheid, betrouwbaarheid, schaalbaarheid, 
-energie-efficientie en kostprijs van verschillende frontend en backend Technologieën te beoordelen.
-Deze data zal gebruikt worden bij het ontwikkelen van de managementtool "Hank" om 
-zo een meest geschikte combinatie van technologieën te identificeren. 
-Als er gesproken wordt over frontend technologieën bedoelen we de technologie die gebruikt wordt 
-om de gebruiker een interface te geven waarop de gebruiker de verschillende bedrijfsprocessen kan beheren. 
-Deze interface communiceert met de backend technologie die de data verwerkt en opslaat.
-Als we over backend programmeertalen spreken hebben we een aantal populaire opties zoals Java, Python, C\#, PHP, Javascript, ...
-Hierop zijn er een aantal frameworks gebaseerd zoals Spring, Django, .NET, Laravel, Node.js, ...
-Deze frameworks zijn uniek in hun eigen manier en hebben elk hun eigen voor- en nadelen. 
-Bij frontend technologieën hebben we ook een aantal populaire opties zoals Javascript, Typescript, HTML, CSS, ...
-Hierop zijn respectievelijk ook een aantal frameworks gebaseerd zoals Angular, React, Vue, ...
-We hopen met dit onderzoek een beter inzicht te krijgen in de verschillende technologieën en zo 
-een kostefficiente en performante oplossing te kunnen bieden voor de managementtool "Hank".
+
 \begin{abstract}
-
-
+    In een snel evoluerende wereld van softwareontwikkeling is het cruciaal om de meest geschikte technologieën te selecteren bij het ontwikkelen van een applicatie of tool die het best voldoet aan de specifieke behoeften van de klant.
+    Het doel van deze paper is het onderzoeken welke combinatie van front- en backend technologieën het meest geschikt is voor de ontwikkeling van de managementtool "Hank".
+    %Explicatie HANK
+    Er zal een vergelijking worden gemaakt op basis van performantie, betrouwbaarheid en schaalbaarheid. In context van dit onderzoek verwijst de term "Frontend-technologieën" naar de technologische componenten die worden ingezet om de gebruiker een intuïtieve interface te bieden voor het beheren van diverse bedrijfsprocessen. Deze interface communiceert met de backend technologie die de data verwerkt en opslaat. Als we over backend programmeertalen spreken hebben we een aantal populaire opties zoals Java, Python, C\#, PHP, Javascript, \ldots Hierop zijn er een aantal frameworks gebaseerd zoals Spring, Django, .NET, Laravel, Node.js, \ldots Deze frameworks zijn uniek in hun eigen manier en hebben elk hun eigen voor- en nadelen. Bij frontend technologieën hebben we ook een aantal populaire opties zoals Javascript, Typescript, HTML, CSS, \ldots Hierop zijn respectievelijk ook een aantal frameworks gebaseerd zoals Angular, React, Vue, \ldots We hopen met dit onderzoek een beter inzicht te krijgen in de verschillende technologieën en zo een kostefficiente en performante oplossing te kunnen bieden voor de managementtool "Hank".
 \end{abstract}
 
 \tableofcontents
+%---------- Inleiding ----------------------
+\section{Introductie}%
+\label{sec:introductie}
 
-% De hoofdtekst van het voorstel zit in een apart bestand, zodat het makkelijk
-% kan opgenomen worden in de bijlagen van de bachelorproef zelf.
-\input{voorstel-inhoud}
+% \begin{itemize}
+%   \item kaderen thema
+%   \item de doelgroep
+%   \item de probleemstelling en (centrale) onderzoeksvraag
+%   \item de onderzoeksdoelstelling
+% \end{itemize}
+
+  In een snel evoluerende wereld van softwareontwikkeling is het cruciaal om de meest geschikte technologieën te selecteren bij het ontwikkelen van een applicatie of tool die het best voldoet aan de specifieke behoeften van de klant.
+  Het kiezen van de juiste technologieën is essentieël want ze vormen de ruggengraat van het eindresultaat en bepalen het succes ervan. Ook is dit van uiterst belang om zo te kunnen voldoen aan de specifieke bijnodigdheden en behoeften van de klant. Zo worden tijdsverlies en onnodige kosten zo goed mogelijk vermeden. 
+  Dit onderzoek richt zich op de ontwikkeling van een managementtool "Hank", met als doel een diepgaande analyse te maken van de verschillende front- en backend-technologieën. Er wordt gestreeft naar een robuuste, performante, schaalbare, redundante, ease of use en kostefficiënte oplossing te bieden voor de managementtool "Hank".
+  \subsection{Probleemstelling}%
+  \label{sub:probleemstelling}
+  
+
+
+
+Denk er aan: een typische bachelorproef is \textit{toegepast onderzoek}, wat betekent dat je start vanuit een concrete probleemsituatie in bedrijfscontext, een \textbf{casus}. Het is belangrijk om je onderwerp goed af te bakenen: je gaat voor die \textit{ene specifieke probleemsituatie} op zoek naar een goede oplossing, op basis van de huidige kennis in het vakgebied.
+
+De doelgroep moet ook concreet en duidelijk zijn, dus geen algemene of vaag gedefinieerde groepen zoals \emph{bedrijven}, \emph{developers}, \emph{Vlamingen}, enz. Je richt je in elk geval op it-professionals, een bachelorproef is geen populariserende tekst. Eén specifiek bedrijf (die te maken hebben met een concrete probleemsituatie) is dus beter dan \emph{bedrijven} in het algemeen.
+
+Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
+
+Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
+
+%---------- Stand van zaken -> literatuurstudie ------------
+
+\section{State-of-the-art}%
+\label{sec:state-of-the-art}
+
+Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
+
+Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
+
+Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
+
+Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
+
+Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
+
+% Voor literatuurverwijzingen zijn er twee belangrijke commando's:
+% \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
+%   geen onderdeel is van de zin.
+% \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
+%   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
+%   ...'')
+
+Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
+
+%---------- Methodologie ------------------------------------------------------
+\section{Methodologie}%
+\label{sec:methodologie}
+
+Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
+
+Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
+
+Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
+
+Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
+
+Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
+
+Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
+
+%---------- Verwachte resultaten ----------------------------------------------
+\section{Verwacht resultaat, conclusie}%
+\label{sec:verwachte_resultaten}
+
+Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
+
+Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
+
+Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
 
 \printbibliography[heading=bibintoc]
 
