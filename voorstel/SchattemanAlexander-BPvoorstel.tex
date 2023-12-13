@@ -34,7 +34,7 @@
 \begin{document}
 
 \begin{abstract}
-    In een snel evoluerende wereld van softwareontwikkeling en innovatie is het cruciaal om de meest geschikte technologieën te selecteren bij het ontwikkelen van een applicatie of tool die het best voldoet aan de specifieke behoeften van de klant.
+    In een snel evoluerende wereld van softwareontwikkeling en innovatie is het cruciaal om de meest geschikte technologieën te selecteren bij het ontwikkelen van een applicatie of tool. Zodat deze het best voldoet aan de specifieke behoeften van de klant.
     \bigskip
     Het hoofddoel van deze paper is het onderzoeken welke combinatie van front- en backend technologieën het meest geschikt is voor de ontwikkeling van de managementtool `Hank`.
     \bigskip
@@ -56,9 +56,7 @@
   \label{sub:probleemstelling}
   Dit onderzoek richt zich op de ontwikkeling van de managementtool `Hank', met als doel een diepgaande analyse te maken van de verschillende front- en backend-technologieën. Hank: een Elmos-inhouse visualisatie-tool die de Competence Centers in een live dashboard stopt. Elke collega/consultant heeft een groeipad. Hank toont hiervan de live leertrajecten, certificaten maar ook examens en geplande opleidingen. `Hank' is een webapplicatie die in opdracht van het consultancy bedrijf Elmos NV ontwikkeld zal worden. Hetgeen dat Elmos wil bereiken is het versnellen van bedrijfsprocessen door middel van een op maat gemaakte managementapplicatie. Deze webapplicatie zou probleemloos hand in hand gaan met een efficiente front- en backend technologie.
   \bigskip
-  Als er over backend programmeertalen gesproken wordt, zijn een aantal populaire opties zoals Java, Python, C\#, PHP, Javascript, \ldots Hierop zijn er een aantal frameworks gebaseerd zoals Spring, Django,.NET, Laravel, Node.js, \ldots Deze frameworks zijn uniek in hun eigen manier en hebben elk hun eigen voor- en nadelen. Bij frontend technologieën zijn er ook een aantal populaire opties zoals Javascript, Typescript, HTML, CSS, \ldots Hierop zijn respectievelijk ook een aantal frameworks gebaseerd zoals Angular, React, Vue, \ldots.
-  \bigskip
-  Er wordt gestreeft naar een robuuste, performante, schaalbare, redundante, ease of use en kostefficiënte oplossing te bieden voor de managementtool `Hank`. Om deze doelstellingen te kunnen bereiken is het van uiterst belang om de juiste technologieën te selecteren. Tijdens ons onderzoek zal er ook een proof of concept worden uitgewerkt worden met de vastgestelde technologieën.
+  Er wordt gestreeft naar een robuuste, performante, schaalbare, redundante, ease of use en kostefficiënte oplossing te bieden voor de managementtool `Hank`. Om deze doelstellingen te kunnen bereiken is het van uiterst belang om de juiste technologieën te selecteren. Tijdens het onderzoek zal er ook een proof of concept uitgewerkt worden met de vastgestelde technologieën.
 
 %---------- Stand van zaken -> literatuurstudie ------------
 
@@ -87,12 +85,13 @@ Alternatief, heb je ook ``Pull-Based'' architecturen, deze haalt de view laag re
 Dit onderscheid is esentieel bij het kiezen van een geschikt framework, omdat het de manier waarop de gegevens worden uitgewisseld beïnvloedt.
 \subsection{Ge\-rel\-at\-eerde studies}%
 \label{sub:Gerelateerde_studies}
+% TODO
 Er zijn reeds verschillende studies uitgevoerd in verband met de prestaties en schaalbaarheid van frameworks. Deze onderzoeken omvatten ook analyses van de beschikbaarheid van soft\-ware\-ont\-wik\-kel\-aars die vertrouwd zijn met deze frameworks.
 \bigskip
 In de verdere verkenning van ge\-rel\-a\-teer\-de studies is het belangrijk te kijken naar specifieke bevindingen, methodologieën en conclusies die door onderzoekers zijn bereikt. Het identificeren van trends, best practices en e\-ven\-tu\-ele uitdagingen die in eerdere studies naar voren zijn gekomen, kan waardevolle inzichten bieden bij het begrijpen van de rol van frameworks in webontwikkeling en het beoordelen van hun geschiktheid voor specifieke projecten.
 \pagebreak
 %---------- Methodologie -----------------------------------
-\subsection{Methodologie}
+\section{Methodologie}
 Deze paper schetst een methodologisch plan om andere softwareontwikkelaars te informeren over geschikte frameworks voor de ontwikkeling van een full-stack managementtool.
 % ---------FASE 1 -----------
 \subsection*{Fase 1: Literatuurstudie}
@@ -186,7 +185,6 @@ In deze fase wordt de applicatie uitgebouwd. Dit wil zeggen dat ervoor gezorgd w
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat en conclusie}%
 \label{sec:verwachte_resultaten}
-
 Het verwachte resultaat van het onderzoek is een diepgaand inzicht in de prestaties, schaalbaarheid en gebruiksvriendelijkheid van de getoetste frameworks, met een specifieke focus op het gebruik van dotnet als backend en React als frontend. Hier zijn enkele mogelijke verwachtingen en hypotheses die kunnen worden geformuleerd:
 
 \begin{itemize}
@@ -215,7 +213,7 @@ De meerwaarde voor de doelgroep ligt in het verkrijgen van concrete inzichten en
 
 \clearpage
 \begin{ganttchart}[
-  x unit=0.45cm,
+  x unit=0.6cm,
   y unit title=0.6cm,
   y unit chart=0.8cm,
   vgrid,hgrid,
@@ -229,18 +227,16 @@ De meerwaarde voor de doelgroep ligt in het verkrijgen van concrete inzichten en
   group top shift=.6,
   group height=.3,
   group peaks tip position=0
-  ]{1}{24}
+  ]{1}{16}
 %labels
-\gantttitle{2024}{24} \\
-\gantttitle{Jan}{4}
+\gantttitle{2024}{16} \\
 \gantttitle{Feb}{4}
 \gantttitle{Mar}{4}
 \gantttitle{Apr}{4}
-\gantttitle{May}{4}
-\gantttitle{Jun}{4} \\
+\gantttitle{May}{4}\\
 
 %tasks
-\ganttgroup{Fase 1: Literatuurstudie}{1}{3} \\
+\ganttgroup{Fase 1: Literatuurstudie}{1}{2} \\
 \ganttbar{Informatie opzoeken}{1}{2} \\
 \ganttbar{Vergelijken en analyseren}{2}{3} \\
 \ganttmilestone{Fase 1 Afgerond}{3} \\
@@ -250,24 +246,24 @@ De meerwaarde voor de doelgroep ligt in het verkrijgen van concrete inzichten en
 \ganttbar{Analyseren TO BE}{5}{6} \\
 \ganttmilestone{Fase 2 Afgerond}{6} \\
 
-\ganttgroup{Fase 3: Ontwerp}{7}{10} \\
+\ganttgroup{Fase 3: Ontwerp}{7}{9} \\
 \ganttbar{Back-end Frameworks zoeken}{7}{8} \\
-\ganttbar{Front-end Frameworks zoeken}{8}{9} \\
-\ganttbar{Applicatie Ontwerpen}{9}{10} \\
-\ganttmilestone{Fase 3 Afgerond}{10} \\
+\ganttbar{Front-end Frameworks zoeken}{7}{8} \\
+\ganttbar{Applicatie Ontwerpen}{8}{9} \\
+\ganttmilestone{Fase 3 Afgerond}{9} \\
 
-\ganttgroup{Fase 4: Implementatie}{11}{16} \\
+\ganttgroup{Fase 4: Implementatie}{9}{13} \\
 \ganttbar{Applicatie Ontwikkelen}{11}{12} \\
-\ganttbar{Implementatie oplossingen}{13}{14} \\
-\ganttmilestone{Fase 4 Afgerond}{16} \\
+\ganttbar{Implementatie oplossingen}{12}{13} \\
+\ganttmilestone{Fase 4 Afgerond}{13} \\
 
-\ganttgroup{Fase 5: Evaluatie}{17}{18} \\
-\ganttbar{Oplossing evalueren}{17}{18} \\
-\ganttbar{Vergelijken met andere oplossingen}{18}{19} \\
-\ganttbar{Conclusie opstellen}{19}{20} \\
-\ganttmilestone{Fase 5 Afgerond}{20} \\
+\ganttgroup{Fase 5: Evaluatie}{13}{15} \\
+\ganttbar{Oplossing evalueren}{13}{14} \\
+\ganttbar{Vergelijken met andere oplossingen}{13}{14} \\
+\ganttbar{Conclusie opstellen}{14}{15} \\
+\ganttmilestone{Fase 5 Afgerond}{15} \\
 
-\ganttmilestone{Eindoplevering}{22} \\
+\ganttmilestone{Eindoplevering}{16} \\
 
 %relations
 \ganttlink{elem2}{elem3}
