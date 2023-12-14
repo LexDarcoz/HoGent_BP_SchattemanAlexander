@@ -18,7 +18,7 @@
 \academicyear{2023-2024}
 
 % TODO: Werktitel
-\title{Onderzoek naar de meest geschikte technologiestacks voor de ontwikkeling van de managementtool `Hank`}
+\title{Onderzoek naar de meest geschikte technologie stacks voor de ontwikkeling van de managementtool `Hank`}
 
 \author{Alexander Schatteman}
 \email{Alexander.schatteman@student.hogent.be}
@@ -38,7 +38,7 @@
     \bigbreak
     Het hoofddoel van deze paper is het onderzoeken welke combinatie van front- en backend technologieën het meest geschikt is voor de ontwikkeling van de managementtool `Hank`.
     \bigbreak
-    Om de context van `HANK' te verduidelijken: `HANK' is een managementtool dat tijdens dit onderzoek ook daadwerkelijk zal ontwikkeld worden. In opdracht van consultancy bedrijf Elmos NV, heeft `HANK' tot doel de bedrijfsprocessen van het Human Resources-departement efficiënter te maken door middel van een op maat gemaakte managementtool. Deze webapplicatie zou probleemloos hand in hand moeten gaan met een efficiënte front- en backend technologie. 
+    `HANK' is een managementtool dat tijdens dit onderzoek daadwerkelijk  zal ontwikkeld worden. In opdracht van consultancy bedrijf Elmos NV, heeft `HANK' tot doel de bedrijfsprocessen van het Human Resources-departement efficiënter te maken door middel van een op maat gemaakte managementtool. Deze webapplicatie zou probleemloos hand in hand moeten gaan met een efficiënte front- en backend technologie. 
     \bigbreak
     De vergelijking zal worden gemaakt op basis van performantie, betrouwbaarheid en schaalbaarheid. In context van dit onderzoek verwijst de term `Frontend-technologieën' naar de technologische componenten die worden ingezet om de gebruiker een intuïtieve interface te bieden voor het beheren van diverse bedrijfsprocessen. Deze interface communiceert met de backend technologie die de data verwerkt en opslaat. 
     \bigbreak
@@ -50,11 +50,11 @@
 \section{Introductie}%
 \label{sec:introductie}
   In een snel evoluerende wereld van softwareontwikkeling is het cruciaal om zorgvuldig de meest geschikte technologieën te selecteren bij het ontwikkelen van een applicatie of tool die het best voldoet aan de specifieke behoeften van de klant.
-  Het kiezen van de juiste technologieën is essentieel, aangezien ze de ruggengraat van het eindresultaat vormen en bepalen het succes ervan. Dit is van uiterst belang om zo te kunnen voldoen aan de specifieke bijnodigdheden en behoeften van de klant, waardoor tijdsverlies en onnodige kosten zo goed mogelijk worden vermeden. 
+  Het kiezen van de juiste technologieën is essentieel, aangezien ze de ruggengraat van het eindresultaat vormen en bepalen het succes ervan. Dit is van uiterst belang om zo te kunnen voldoen aan de specifieke bijnodigdheden en behoeften van de klant, waardoor tijdsverlies en onnodige kosten worden vermeden. 
   
   \subsection{Probleemstelling}%
   \label{sub:probleemstelling}
-  Dit onderzoek richt zich op de ontwikkeling van de managementtool `Hank', met als doel een diepgaande analyse te maken van de verschillende front- en backend-technologieën. Hank: een Elmos-inhouse visualisatie-tool die de Competence Centers in een live dashboard stopt. Elke collega/consultant heeft een groeipad. Hank toont hiervan de live leertrajecten, certificaten maar ook examens en geplande opleidingen. `Hank' is een webapplicatie die in opdracht van het consultancy bedrijf Elmos NV ontwikkeld zal worden. Hetgeen dat Elmos wil bereiken is het versnellen van bedrijfsprocessen door middel van een op maat gemaakte managementapplicatie. Deze webapplicatie zou probleemloos hand in hand gaan met een efficiënte front- en backend technologie.
+  Dit onderzoek richt zich op de ontwikkeling van de managementtool `Hank', met als doel een diepgaande analyse te maken van de verschillende front- en backend-technologieën. Hank: een Elmos-inhouse visualisatie-tool die de Competence Centers in een live dashboard weergeeft. Elke collega/consultant heeft een groeipad. Hank toont hiervan de live leertrajecten, certificaten maar ook examens en geplande opleidingen. Deze is een webapplicatie die in opdracht van het consultancy bedrijf Elmos NV ontwikkeld zal worden. Hetgeen dat Elmos wil bereiken is het versnellen van bedrijfsprocessen door middel van een op maat gemaakte managementapplicatie. Deze webapplicatie zou probleemloos hand in hand gaan met een efficiënte front- en backend technologie.
   \bigbreak
   Er wordt gestreefd naar een robuuste, performante, schaalbare, redundante, ease of use en kostenefficiënte oplossing te bieden voor de managementtool `Hank`. Om deze doelstellingen te kunnen bereiken is het van uiterst belang om de juiste technologieën te selecteren. Tijdens het onderzoek zal er ook een proof of concept uitgewerkt worden met de vastgestelde technologieën.
 
@@ -68,19 +68,19 @@ Een framework is een set van tools gebruikt als basis om goed gestructureerde en
 \subsection{Front-end frameworks}%
 \label{sub:frontend_frameworks}
 Front-end van een applicatie, vaak duidt dit naar de programmeertalen HTML, CSS en Ja\-va\-script. Deze programmeertalen vormen de basis van een webapplicatie. HTML zorgt voor de structuur van de webpagina, CSS zorgt voor de stijl en Ja\-va\-script zorgt voor de interactie. Maar deze zijn niet voldoende om een volledige webapplicatie te ontwikkelen. Daarom zijn er een aantal frameworks ontwikkeld die de ontwikkeling van een webapplicatie vergemakkelijken. 
-Voorbeelden van front-end frameworks zijn Angular, React, Ambular, Ember, Bootstrap, Vue, \ldots\textcite{Jaiswal2022} 
+Voorbeelden van front-end frameworks zijn Angular, React, Ambular, Ember, Bootstrap, Vue, \ldots\autocite{Jaiswal2022} 
 
 \subsection{Back-end frameworks}%
 \label{sub:backend_frameworks}
 Back-end van een applicatie, vaak duidt dit naar de programmeertalen Java, Python, C\#, PHP, Ja\-va\-script, \ldots Deze programmeertalen zorgen voor de logica van de applicatie. Maar deze zijn niet voldoende om een volledige webapplicatie te ontwikkelen. Ook hier zijn er een aantal frameworks ontwikkeld die de ontwikkeling van een webapplicatie vergemakkelijken.
-Voorbeelden van back-end frameworks zijn Spring, Django,.NET, Laravel, Node.js, \ldots\textcite{Kaluza2019}
+Voorbeelden van back-end frameworks zijn Spring, Django,.NET, Laravel, Node.js, \ldots\autocite{Kaluza2019}
 
 \subsection{Push-Based vs. Pull-Based}%
-Een belangrijk onderscheid in web development architecturen is het verschil tussen ``Push-Based'' en ``Pull-Based'' architecturen, dat verwijst naar de rol van de server in relatie tot de view layer.\textcite{Lomas2022}
+Een belangrijk onderscheid in web development architecturen is het verschil tussen ``Push-Based'' en ``Pull-Based'' architecturen, dat verwijst naar de rol van de server in relatie tot de view layer.\autocite{Lomas2022}
 \bigbreak
 In ``Push-Based'' architecture start de server met het verzenden (Pushen) van gegevens om vervolgens de resultaten op de view te renderen. Veel MVC (Model-view-controller) frameworks zijn gebaseerd op dit type architectuur. Voorbeelden van push-based technologieën zijn; Django, Ruby on Rails, Symfony, Spring MVC, Stripes en codeIgniter.
 \bigbreak
-Alternatief, heb je ook ``Pull-Based'' architecturen, deze haalt de view laag resultaten op van meerdere controllers volgens de vereisten. Voorbeelden van deze architecturen zijn Lift, Tapestry, JBoss Seam en Wicket.
+Alternatief, bestaan ook ``Pull-Based'' architecturen, deze haalt de view laag resultaten op van meerdere controllers volgens de vereisten. Voorbeelden van deze architecturen zijn Lift, Tapestry, JBoss Seam en Wicket.
 \bigbreak
 Dit onderscheid is essentieel bij het kiezen van een geschikt framework, omdat het de manier waarop de gegevens worden uitgewisseld beïnvloedt.
 \subsection{Ge\-rel\-at\-eerde studies}%
@@ -212,7 +212,7 @@ Het verwachte resultaat van het onderzoek is een diepgaand inzicht in de pre\-st
 \end{itemize}
 
 \subsection{Conclusie}
-Op basis van de verwachte resultaten kan een conclusie worden getrokken over welke combinatie van frameworks (dotnet als backend en React als frontend) het meest geschikt is voor specifieke softwareontwikkelingsbehoeften. Deze conclusie kan dienen als waardevolle informatie voor softwareontwikkelaars en besluitvormers bij het kiezen van technologiestacks voor toekomstige projecten.
+Op basis van de verwachte resultaten kan een conclusie worden getrokken over welke combinatie van frameworks (dotnet als backend en React als frontend) het meest geschikt is voor specifieke softwareontwikkelingsbehoeften. Deze conclusie kan dienen als waardevolle informatie voor softwareontwikkelaars en besluitvormers bij het kiezen van technologie stacks voor toekomstige projecten.
 
 De meerwaarde voor de doelgroep is het verkrijgen van concrete inzichten en aanbevelingen op basis van objectieve metingen en evaluaties. Hierdoor kunnen ontwikkelaars van weloverwogen beslissingen nemen bij het selecteren van frameworks, rekening houdend met pre\-sta\-ties, schaalbaarheid en gebruiksvriendelijkheid. Het uiteindelijke resultaat van de bachelorproef biedt praktische richtlijnen die de efficiëntie en effectiviteit van softwareontwikkeling kunnen verbeteren.
 \printbibliography[heading=bibintoc]
