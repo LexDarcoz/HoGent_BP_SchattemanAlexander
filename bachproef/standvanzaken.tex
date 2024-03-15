@@ -7,12 +7,74 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
-Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+% Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
 
-Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin (narratieve referentie), gebruik je \texttt{$\backslash${}textcite\{\}}. Soms is de auteursnaam niet expliciet een onderdeel van de zin, dan gebruik je \texttt{$\backslash${}autocite\{\}} (referentie tussen haakjes). Dit gebruik je bv.~bij een citaat, of om in het bijschrift van een overgenomen afbeelding, broncode, tabel, enz. te verwijzen naar de bron. In de volgende paragraaf een voorbeeld van elk.
+% Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin (narratieve referentie), gebruik je \texttt{$\backslash${}textcite\{\}}. Soms is de auteursnaam niet expliciet een onderdeel van de zin, dan gebruik je \texttt{$\backslash${}autocite\{\}} (referentie tussen haakjes). Dit gebruik je bv.~bij een citaat, of om in het bijschrift van een overgenomen afbeelding, broncode, tabel, enz. te verwijzen naar de bron. In de volgende paragraaf een voorbeeld van elk.
 
-\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+% \textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
 
-Let er ook op: het \texttt{cite}-commando voor de punt, dus binnen de zin. Je verwijst meteen naar een bron in de eerste zin die erop gebaseerd is, dus niet pas op het einde van een paragraaf.
+% Let er ook op: het \texttt{cite}-commando voor de punt, dus binnen de zin. Je verwijst meteen naar een bron in de eerste zin die erop gebaseerd is, dus niet pas op het einde van een paragraaf.
+
+Een framework is een set van tools gebruikt als basis om goed gestructureerde
+en betrouwbare software en systemen te ontwikkelen. Een web development
+framework wordt vaak gebruikt bij het ontwikkelen van een web applicatie.
+Inclusief web services, web resources en web API's.
+
+\subsection{Front-end frameworks}%
+\label{sub:frontend_frameworks}
+Front-end van een applicatie, vaak duidt dit naar de programmeertalen HTML, CSS en Ja\-va\-script. Deze programmeertalen vormen de basis van een webapplicatie. HTML zorgt voor de structuur van de webpagina, CSS zorgt voor de stijl en Ja\-va\-script zorgt voor de interactie. Maar deze zijn niet voldoende om een volledige webapplicatie te ontwikkelen. Daarom zijn er een aantal frameworks ontwikkeld die de ontwikkeling van een webapplicatie vergemakkelijken.
+Voorbeelden zijn Angular, React, Ambular, Ember, Bootstrap, Vue, \ldots\autocite{Jaiswal2022}
+
+\subsection{Back-end frameworks}%
+\label{sub:backend_frameworks}
+Back-end van een applicatie, vaak duidt dit naar de programmeertalen Java, Python, C\#, PHP, Ja\-va\-script\ldots  Deze programmeertalen zorgen voor de logica van de applicatie. Maar deze zijn niet voldoende om een volledige webapplicatie te ontwikkelen. Ook hier zijn er een aantal frameworks ontwikkeld die de ontwikkeling van een webapplicatie vergemakkelijken.
+Voorbeelden zijn Spring, Django,.NET, Node.js, \ldots\autocite{Kaluza2019}
+
+\subsection{Push-Based vs. Pull-Based}%
+Een belangrijk onderscheid in web development architecturen is het verschil
+tussen ``Push-Based'' en ``Pull-Based'' architecturen, dat verwijst naar de rol
+van de server in relatie tot de view layer.\autocite{Lomas2022} \bigbreak In
+``Push-Based'' architecture start de server met het verzenden (Pushen) van
+gegevens om vervolgens de resultaten op de view te renderen. Veel MVC
+(Model-view-controller) frameworks zijn gebaseerd op dit type architectuur.
+Voorbeelden van push-based technologieën zijn; Django, Ruby on Rails, Symfony,
+Spring MVC, Stripes en codeIgniter. \bigbreak Alternatief, bestaan ook
+``Pull-Based'' architecturen, deze haalt de view laag resultaten op van
+meerdere controllers volgens de vereisten. Voorbeelden van deze architecturen
+zijn Lift, Tapestry, JBoss Seam en Wicket. \bigbreak Dit onderscheid is
+essentieel bij het kiezen van een geschikt framework, omdat het de manier
+waarop de gegevens worden uitgewisseld beïnvloedt.
+
+\subsection{Ge\-rel\-at\-eerde studies}%
+\label{sub:Gerelateerde_studies}
+Er zijn reeds verschillende studies uitgevoerd in verband met de pre\-sta\-ties en schaalbaarheid van frameworks\autocite{Daityari2023}.  Deze onderzoeken omvatten ook analyses van de beschikbaarheid van soft\-ware\-ont\-wik\-kel\-aars die vertrouwd zijn met deze frameworks.
+
+\subsection{React vs Vue vs Angular}%
+Angular is ontwikkeld door Google, deze onderscheidt zich als een volledig
+framework dat is gebaseerd op TypeScript. In vergelijking met React, een
+populair front-end framework ontwikkeld door Facebook, dat zijn basis heeft in
+JavaScript en voornamelijk dient als een open-source bibliotheek voor het
+uitbouwen van gebruikersinterfaces. Bij het gebruik van React voor
+webapplicatieontwikkeling zijn aanvullende packages vereist. Aan de andere kant
+is Vue een progressief framework voor het ontwikkelen van gebruikersinterfaces,
+gecreëerd door Evan You.\autocite{EvanYou2024} Deze wordt best gebruikt in
+minder complexe, kleinere web applicaties en is ook makkelijker om te leren.
+Angular daarentegen gaat verder dan alleen een framework; het wordt
+gepresenteerd als een uitgebreid platform voor het bouwen van single-page
+client-applicaties met behulp van HTML en TypeScript. Angular wordt vaak ook
+beschouwd als een framework met een steile leercurve. De keuze tussen Angular,
+React en Vue hangt af van de behoeften, budget en complexiteit van het
+project.\autocite{Joshi2023}
+
+\subsection{Node vs .NET}%
+NodeJS en .NET zijn beide krachtige frameworks met verschillende
+karakteristieken. De keuze tussen Node.js en .NET hangt af van de vereisten van
+het project. Node.js kan uitblinken in situaties waar snelle prestaties en
+schaalbaarheid van cruciaal belang zijn, terwijl .NET de voorkeur kan hebben
+bij het bouwen van meer complexe enterprise-toepassingen die moeten samenwerken
+met de Microsoft-ecosfeer. \autocite{Hutsulyak2023}
+
+\bigbreak
+In de verdere verkenning van ge\-rel\-a\-teer\-de studies is het belangrijk te kijken naar specifieke bevindingen, methodologieën en conclusies die door onderzoekers zijn bereikt. Het identificeren van trends, best practices en e\-ven\-tu\-ele uitdagingen die in eerdere studies naar voren zijn gekomen, kan waardevolle inzichten bieden bij het begrijpen van de rol van frameworks in webontwikkeling en het beoordelen van hun geschiktheid voor specifieke projecten.
 
 \lipsum[7-20]
