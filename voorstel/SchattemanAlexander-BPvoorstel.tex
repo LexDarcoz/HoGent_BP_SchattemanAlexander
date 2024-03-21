@@ -7,6 +7,7 @@
 \documentclass{hogent-article}
 \usepackage{pgfgantt}
 \usepackage{tikz}
+\usepackage{abstract}
 % Invoegen bibliografiebestand
 \addbibresource{voorstel.bib}
 
@@ -33,17 +34,19 @@
 % ----------- Begin Paper --------------
 \begin{document}
 
-\begin{abstract}
-    In een snel e\-vo\-lu\-erende wereld van softwareontwikkeling en innovatie is het cruciaal om de meest geschikte technologieën te se\-lec\-teren bij het ontwikkelen van een applicatie of tool. Zodat deze het best voldoet aan de specifieke behoeften van de klant.
-    \bigbreak
-    Het hoofddoel van deze paper is het onderzoeken welke combinatie van front- en backend technologieën het meest geschikt is voor de ontwikkeling van de managementtool `Hank`.
-    \bigbreak
-    Om de context van `HANK' te verduidelijken: `HANK' is een managementtool dat tijdens dit onderzoek ook daadwerkelijk zal ontwikkeld worden. In opdracht van consultancy bedrijf Elmos NV, heeft `HANK' tot doel de bedrijfsprocessen van het Human Resources-departement efficiënter te maken door een gecentraliseerde hub te bieden voor documenten, opleidingen en specialiteiten van consultants die bij het bedrijf werken. Hierdoor zou het selectieproces bij opdrachten soepeler en efficiënter moeten verlopen wanneer het bedrijf zich aan een project wijdt. Deze webapplicatie zou probleemloos hand in hand moeten gaan met een efficiënte front- en backend technologie. 
-    \bigbreak 
-    De vergelijking zal worden gemaakt op basis van prestaties, betrouwbaarheid en schaalbaarheid. In context van dit onderzoek verwijst de term `Frontend-technologieën' naar de technologische componenten die worden ingezet om de gebruiker een intuïtief interface te bieden voor het beheren van diverse bedrijfsprocessen. Deze interface communiceert met de backend-technologie die de data verwerkt en opslaat. 
-    \bigbreak
-    Dit onderzoek beoogt een beter inzicht te bezorgen in de verschillende technologieën en zo een kostenefficiënte en performante oplossing te kunnen bieden voor de managementtool `Hank'.
-\end{abstract}
+
+
+  % \begin{abstract}
+  %   In een snel e\-vo\-lu\-erende wereld van softwareontwikkeling en innovatie is het cruciaal om de meest geschikte technologieën te se\-lec\-teren bij het ontwikkelen van een applicatie of tool. Zodat deze het best voldoet aan de specifieke behoeften van de klant.
+  %   \bigbreak
+  %   Het hoofddoel van deze paper is het onderzoeken welke combinatie van front- en backend technologieën het meest geschikt is voor de ontwikkeling van de managementtool `Hank`.
+  %   \bigbreak
+  %   Om de context van `HANK' te verduidelijken: `HANK' is een managementtool dat tijdens dit onderzoek ook daadwerkelijk zal ontwikkeld worden. In opdracht van consultancy bedrijf Elmos NV, heeft `HANK' tot doel de bedrijfsprocessen van het Human Resources-departement efficiënter te maken door een gecentraliseerde hub te bieden voor documenten, opleidingen en specialiteiten van consultants die bij het bedrijf werken. Hierdoor zou het selectieproces bij opdrachten soepeler en efficiënter moeten verlopen wanneer het bedrijf zich aan een project wijdt. Deze webapplicatie zou probleemloos hand in hand moeten gaan met een efficiënte front- en backend technologie. 
+  %   \bigbreak 
+  %   De vergelijking zal worden gemaakt op basis van prestaties, betrouwbaarheid en schaalbaarheid. In context van dit onderzoek verwijst de term `Frontend-technologieën' naar de technologische componenten die worden ingezet om de gebruiker een intuïtief interface te bieden voor het beheren van diverse bedrijfsprocessen. Deze interface communiceert met de backend-technologie die de data verwerkt en opslaat. 
+  %   \bigbreak
+  %   Dit onderzoek beoogt een beter inzicht te bezorgen in de verschillende technologieën en zo een kostenefficiënte en performante oplossing te kunnen bieden voor de managementtool `Hank'.
+  % \end{abstract}
 
 \tableofcontents
 %---------- Inleiding ----------------------
@@ -87,16 +90,11 @@ Dit onderscheid is essentieel bij het kiezen van een geschikt framework, omdat h
 \subsection{Ge\-rel\-at\-eerde studies}%
 \label{sub:Gerelateerde_studies}
 Er zijn reeds verschillende studies uitgevoerd in verband met de pre\-sta\-ties en schaalbaarheid van frameworks\autocite{Daityari2023}.  Deze onderzoeken omvatten ook analyses van de beschikbaarheid van soft\-ware\-ont\-wik\-kel\-aars die vertrouwd zijn met deze frameworks.
-
 \subsection{React vs Vue vs Angular}%
 Angular is ontwikkeld door Google, deze onderscheidt zich als een volledig framework dat is gebaseerd op TypeScript. In vergelijking met React, een populair front-end framework ontwikkeld door Facebook, dat zijn basis heeft in JavaScript en voornamelijk dient als een open-source bibliotheek voor het uitbouwen van gebruikersinterfaces. Bij het gebruik van React voor webapplicatieontwikkeling zijn aanvullende packages vereist. Aan de andere kant is Vue een progressief framework voor het ontwikkelen van gebruikersinterfaces, gecreëerd door Evan You.\autocite{EvanYou2024} Deze wordt best gebruikt in minder complexe, kleinere web applicaties en is ook makkelijker om te leren. Angular daarentegen gaat verder dan alleen een framework; het wordt gepresenteerd als een uitgebreid platform voor het bouwen van single-page client-applicaties met behulp van HTML en TypeScript. Angular wordt vaak ook beschouwd als een framework met een steile leercurve. De keuze tussen Angular, React en Vue hangt af van de behoeften, budget en complexiteit van het project.\autocite{Joshi2023}
-
-
 \subsection{Node vs .NET}%
 NodeJS en .NET zijn beide krachtige frameworks met verschillende karakteristieken. De keuze tussen Node.js en .NET hangt af van de vereisten van het project. Node.js kan uitblinken in situaties waar snelle prestaties en schaalbaarheid van cruciaal belang zijn, terwijl .NET de voorkeur kan hebben bij het bouwen van meer complexe enterprise-toepassingen die moeten samenwerken met de Microsoft-ecosfeer.
 \autocite{Hutsulyak2023}
-
-
 \bigbreak
 In de verdere verkenning van ge\-rel\-a\-teer\-de studies is het belangrijk te kijken naar specifieke bevindingen, methodologieën en conclusies die door onderzoekers zijn bereikt. Het identificeren van trends, best practices en e\-ven\-tu\-ele uitdagingen die in eerdere studies naar voren zijn gekomen, kan waardevolle inzichten bieden bij het begrijpen van de rol van frameworks in webontwikkeling en het beoordelen van hun geschiktheid voor specifieke projecten.
 

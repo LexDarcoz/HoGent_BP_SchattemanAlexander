@@ -46,15 +46,18 @@ Spring, Django,.NET, Node.js, \ldots\autocite{Kaluza2019}
 \subsection{Push-Based vs. Pull-Based}%
 Een belangrijk onderscheid in web development architecturen is het verschil
 tussen ``Push-Based'' en ``Pull-Based'' architecturen, dat verwijst naar de rol
-van de server in relatie tot de view layer.\autocite{Lomas2022} \bigbreak In
-``Push-Based'' architecture start de server met het verzenden (Pushen) van
+van de server in relatie tot de view layer.\autocite{Lomas2022} 
+\bigbreak
+In ``Push-Based'' architecture start de server met het verzenden (Pushen) van
 gegevens om vervolgens de resultaten op de view te renderen. Veel MVC
 (Model-view-controller) frameworks zijn gebaseerd op dit type architectuur.
 Voorbeelden van push-based technologieën zijn; Django, Ruby on Rails, Symfony,
 Spring MVC, Stripes en codeIgniter. \bigbreak Alternatief, bestaan ook
 ``Pull-Based'' architecturen, deze haalt de view laag resultaten op van
 meerdere controllers volgens de vereisten. Voorbeelden van deze architecturen
-zijn Lift, Tapestry, JBoss Seam en Wicket. \bigbreak Dit onderscheid is
+zijn Lift, Tapestry, JBoss Seam en Wicket.
+\bigbreak
+Dit onderscheid is
 essentieel bij het kiezen van een geschikt framework, omdat het de manier
 waarop de gegevens worden uitgewisseld beïnvloedt.
 
@@ -86,17 +89,15 @@ uitbreiding van React. React werd voor het eerst uitgebracht in 2013,
 geschreven door Jordan Walke.
 
 \subsubsection*{React Library}%
-React wordt vaak verward met een framework maar dit is niet het geval. \autocite{Vallaey2021} React is een declaratieve, efficiënte en flexibele JavaScript-bibliotheek ontwikkeld in 2015 door Facebook. Met React kan je complexe ge\-bruik\-er\-sin\-ter\-fa\-ces samen\-stellen uit kleine en ge\-ïso\-leerde stuk\-ken code die comp\-onents worden genoemd.
+React wordt vaak verward met een framework maar dit is niet het geval. \autocite{Boloorchi2017} React is een declaratieve, efficiënte en flexibele JavaScript-bibliotheek ontwikkeld in 2015 door Facebook. Met React kan je complexe ge\-bruik\-er\-sin\-ter\-fa\-ces samen\-stellen uit kleine en ge\-ïso\-leerde stuk\-ken code die comp\-onents worden genoemd.
 
 \subsubsection*{JSX}
 De structuur van een normale website bestaat uit HTML, CSS en JavaScript. Een
 webbrowser leest deze uit en geeft een website weer zoals wij deze kennen.
-Tijdens dit proces zal een Document Object Model (DOM) aangemaakt worden. Ditis
+Tijdens dit proces zal een Document Object Model (DOM) aangemaakt worden. Dit is
 een representatieve structuur van hoe een webpagina is opgebouwd. Als
-webontwikkelaars dynamische onderdelen toevoegen aan dit DOM met behulp van
-Javascript.
-
-Één van de belangrijkste stokpaardjes van React is het gebruik van een virtuele document object model (DOM) in plaats van de gewone DOM. JSX (JavaScript eXtension) is de syntax extensie voor JavaScript. Het maakt het mogelijk om het DOM te wijzigen met behulp van React. JSX is een combinatie van HTML en JavaScript. Het is een manier om HTML te schrijven in JavaScript. Nadien zullen de resultaten uitgevoerd worden. Bij Angular wordt de hele DOM vervangen wanneer een component gewijzigd moet worden. Daarnaast is het belangrijk om te weten dat React een algemeen framework is voor webapplicaties. In tegenstelling tot Angular is niet elke applicatie die React gebruikt een single-page application (SPA).
+webontwikkelaars dynamische onderdelen willen toevoegen aan dit DOM is dit met behulp van
+Javascript. Hiervoor wordt dus ook vaak gebruik gemaakt van React. Één van de belangrijkste stokpaardjes van React is het gebruik van een virtuele document object model (DOM) in plaats van de gewone DOM. JSX (JavaScript eXtension) is de syntax extensie voor JavaScript. Het maakt het mogelijk om het DOM te wijzigen met behulp van React. JSX is een combinatie van HTML en JavaScript. Het is een manier om HTML te schrijven in JavaScript. Nadien zullen de resultaten uitgevoerd worden. Bij Angular wordt de hele DOM vervangen wanneer een component gewijzigd moet worden. Daarnaast is het belangrijk om te weten dat React een algemeen framework is voor webapplicaties. In tegenstelling tot Angular is niet elke applicatie die React gebruikt een single-page application (SPA).
 
 \subsection*{Vue}%
 Vue.JS is een open-source framework geschreven door Evan You, een voormalige
@@ -117,7 +118,7 @@ JavaScript en voornamelijk dient als een open-source bibliotheek voor het
 uitbouwen van gebruikersinterfaces. Bij het gebruik van React voor
 webapplicatieontwikkeling zijn aanvullende packages vereist. Aan de andere kant
 is Vue een progressief framework voor het ontwikkelen van gebruikersinterfaces,
-gecreëerd door Evan You.\autocite{EvanYou2024} Deze wordt best gebruikt in
+gecreëerd door Evan You.\cite{EvanYou2024} Deze wordt best gebruikt in
 minder complexe, kleinere web applicaties en is ook makkelijker om te leren.
 Angular daarentegen gaat verder dan alleen een framework; het wordt
 gepresenteerd als een uitgebreid platform voor het bouwen van single-page
@@ -149,8 +150,8 @@ ASP.NET en ASP.NET Core zijn beide webframeworks ontwikkeld door Microsoft voor 
 ASP.NET is de oudere versie van het framework en draait op het .NET Framework,
 dat exclusief voor Windows is. ASP.NET maakt gebruik van het
 System.Web-framework en is gebonden aan het Windows-besturingssysteem.
-\smallbreak ASP.NET Core is de nieuwere versie van het framework, volledig
-opnieuw ontworpen om cross-platform te zijn en te draaien op .NET Core.
+\smallbreak
+ASP.NET Core is de nieuwere versie van het framework, volledig opnieuw ontworpen om cross-platform te zijn en te draaien op .NET Core.
 Hierdoor kan ASP.NET Core op verschillende platforms worden uitgevoerd,
 waaronder Windows, Linux en macOS. ASP.NET Core bieden verbeterde prestaties,
 modulariteit en flexibiliteit in vergelijking met zijn voorganger.
@@ -169,23 +170,23 @@ met de Microsoft-ecosfeer.\autocite{Hutsulyak2023}
 \section*{Ge\-rel\-at\-eerde studies}%
 Er zijn reeds verschillende studies uitgevoerd in verband met de pre\-sta\-ties en schaalbaarheid van frameworks\autocite{Daityari2023}.  Deze onderzoeken omvatten ook analyses van de beschikbaarheid van soft\-ware\-ont\-wik\-kel\-aars die vertrouwd zijn met deze frameworks.
 
-\subsection*{Resultaten}%
-Volgens een onderzoek van \autocite{DeNeve2021} is React het meest performante
-framework. Zie figuur \ref{fig:performantie} voor een overzicht van de
-resultaten.
+\subsection*{Performantie}%
+Er werden verschillende studies uitgevoerd om de performantie van verschillende frameworks te vergelijken. Uit deze studies blijkt dat de performantie van een framework afhankelijk is van verschillende factoren, zoals de complexiteit van de applicatie, de grootte van de dataset en de hardware waarop de applicatie wordt uitgevoerd. Uit deze studies blijkt dat sommige frameworks beter presteren dan andere, afhankelijk van de specifieke vereisten van de applicatie. Zo kan het onderzoek van \textcite{DeNeve2021} aantonen dat Angular beter presteert dan React in bepaalde scenario's, terwijl React beter presteert dan Angular in andere scenario's.
+
+
+
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{Screenshot 2024-03-19 151509.png}
     \caption{Performantie van verschillende frameworks}
-    \label{fig:performantie}
+    \label{fig:Performantie}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{Screenshot 2024-03-19 152515.png}
     \caption{Performantie van verschillende frameworks in android}
-    \label{fig:performantie}
+    \label{fig:PerformantieAndroid}
 \end{figure}
 
-\lipsum[7-20]
